@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Livre from './Livre';
+
+import { livres } from './livres';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <section className='listesLivres'>
+     
+      {livres.map((livre) => {
+  
+     
+        const { img, titre, auteur,id } = livre;
+        return <Livre  {...livre} key={id} />;
+      })}
+    </section>
+   
   );
 }
 
