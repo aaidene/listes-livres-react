@@ -6,16 +6,17 @@ import { livres } from './livres';
 
 function App() {
   return (
+
+    <>
+   <h1>Les meilleures ventes d'Amazon</h1>
       <section className='listesLivres'>
      
-      {livres.map((livre) => {
+      {livres.map((livre,index) => {
   
-     
-        const { img, titre, auteur,id } = livre;
-        return <Livre  {...livre} key={id} />;
+        return <Livre  {...livre} key={livre.id} nb={index}  />;
       })}
     </section>
-   
+   </>
   );
 }
 
