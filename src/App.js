@@ -8,7 +8,7 @@ function App() {
   return (
 
     <>
-   <h1>Les meilleures ventes d'Amazon</h1>
+   <h1>Les meilleures ventes d'amazon</h1>
       <section className='listesLivres'>
      
       {livres.map((livre,index) => {
