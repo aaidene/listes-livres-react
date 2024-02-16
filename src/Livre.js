@@ -31,8 +31,7 @@ return (
   value={notation}  
  text={`${avis} avis`}
 />
-     
-     <p>Notation : {notation} ({avis} avis)</p>
+  
      <p>Livraison à {coutDELivraison} <b>{dateDeLivraison}</b>{conditionDELivraison} Ou livraison accélérée <b>{dateDeLivraisonAcce}</b></p>
 
  
